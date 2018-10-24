@@ -20,6 +20,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "cypress": "^3.1.0",
+    "cypress-cucumber-preprocessor": "^1.6.0",
     "eslint": "^5.6.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-plugin-import": "^2.14.0",
