@@ -1,15 +1,36 @@
-# AUTOMATION PROJECT FOR CREW APPLICATION
+# QA automation assignment
 
-Cypress BDD project to test application which represents dashboard with candidates.
+This assignment is meant to evaluate the QA Automation proficiency of full-time engineers.
 
-### Running locally
-Follow instraction in README.md under "oos-ca" folder to start test application.
+## Evaluation points in order of importance
 
-`cd /your/project/path/cypress`
+- correctly defined test cases in BDD format
+- edge cases are covered by tests
+- readiness for CI
+- correct error messages
+- use of docker
+- documentation: README and inline code comments
 
-`npm install cypress --save-dev`
+Results: please share a git repository with us containing your implementation.
 
-`cypress run`
+Level of experience targeted: EXPERT
 
-### Running in docker
-//TODO
+Choose any automation tool. Cypress is a plus.
+Try to progress as far as you can in 2 hours.
+If you have questions please make some assumptions and collect in writing your interpretations.
+
+Good luck.
+
+Time limitations: time is measured from when we send you the assignment to the final commit time onto your repository.
+
+## Technical test
+
+Given an application(oos_ca). Run it using the instructions in README.md. Observe the application functionality, assuming that it works correctly.
+Create automation framework that will make sure that behavior stays consistent in future versions.  
+Create documentation on how to work with your test framework.
+Have at least two test suites. 
+
+## Bonus points
+
+- Use Docker for tests
+- Measure performance of different UI operations 
