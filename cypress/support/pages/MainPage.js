@@ -59,12 +59,12 @@ class MainPage {
 	}
 	
 	moveDowm(moveFrom, moveTo, byAttribute) {
-		this.clickDownOrUp(moveFrom, byAttribute, false);
+		this.clickDown(moveFrom, byAttribute);
 		this.checkSectionContainsEmployee(moveTo, byAttribute);
 	}
 	
 	moveUp(moveFrom, moveTo, byAttribute) {
-		this.clickDownOrUp(moveFrom, byAttribute, true);
+		this.clickUp(moveFrom, byAttribute);
 		this.checkSectionContainsEmployee(moveTo, byAttribute);
 	}
 	
@@ -72,8 +72,12 @@ class MainPage {
 		cy.get('div.App-column').contains(section).parent().find('div.CrewMember-container').contains(attribute);
 	}
 	
-	clickDownOrUp(moveFrom, attribute, isUp) {
-		cy.get('div.App-column').contains(moveFrom).parent().find('div.CrewMember-container').contains(attribute).parent().parent().parent().contains(isUp ? '>' :'<').click();
+	clickDown(moveFrom, attribute) {
+		cy.get('div.App-column').contains(moveFrom).parent().find('div.CrewMember-container').contains(attribute).parent().parent().parent().contains('<').click();
+	}
+	
+	clickUp(moveFrom, attribute) {
+		cy.get('div.App-column').contains(moveFrom).parent().find('div.CrewMember-container').contains(attribute).parent().parent().parent().contains('>').click();
 	}
 }
 
