@@ -4,11 +4,10 @@
 // you can have external state, and also require things!
 import MainPage from '../pages/MainPage';
 
-const url = 'http://localhost:3000/'
 const mainPage = new MainPage();
 
 given('I open application Home page', () => {
-  cy.visit(url);
+  cy.request(Cypress.config('baseUrl'));
 })
 
 when('I specify employee name {string} and city {string}', (name, city) => { 
