@@ -20,7 +20,7 @@ before_script:
   - docker-compose up -d --build
 
 script:
-  - docker-compose run cypress ./node_modules/.bin/cypress run --config baseUrl=http://127.0.0.1
+  - docker-compose run cypress ./node_modules/.bin/cypress run --config baseUrl=http://127.0.0.1 --network="host"
 
 after_script:
 - docker-compose down

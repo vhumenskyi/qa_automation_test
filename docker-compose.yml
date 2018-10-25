@@ -15,4 +15,3 @@ services:
       dockerfile: Dockerfile-cypress
     depends_on:
       - angular
---network="host"
