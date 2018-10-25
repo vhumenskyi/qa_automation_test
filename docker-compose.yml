@@ -7,7 +7,7 @@ services:
       context: .
       dockerfile: Dockerfile
     ports:
-      - '80:80'
+      - "80:80"
 
   cypress:
     build:
@@ -15,4 +15,4 @@ services:
       dockerfile: Dockerfile-cypress
     depends_on:
       - angular
-network_mode: 'host'
+network_mode: "host"
