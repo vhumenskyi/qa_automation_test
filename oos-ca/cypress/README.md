@@ -11,7 +11,7 @@ Cypress BDD project to test application which represents dashboard with candidat
 
 Follow instraction in README.md under "oos-ca" folder to start test application. Be carefull if you will run instraction from README.md under "oos-ca" first and only after will run instructions for cypress it will override node_modules/prop-types, so you will be unable to start test application. 
 
-`npx cypress open`
+`npx cypress open` and click Run All Specs
 
 ### Running in docker
 //TODO
