@@ -3,6 +3,9 @@
 Simple application which represents dashboard with candidates.
 
 ### Running locally
+
+First run instructions from cypress folder.
+
 `yarn install`
 
 `yarn start`
