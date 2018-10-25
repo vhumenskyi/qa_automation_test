@@ -1,36 +1,21 @@
-# QA automation assignment
+# CREW APPLICATION
 
-This assignment is meant to evaluate the QA Automation proficiency of full-time engineers.
+Simple application which represents dashboard with candidates.
 
-## Evaluation points in order of importance
+### Running locally
 
-- correctly defined test cases in BDD format
-- edge cases are covered by tests
-- readiness for CI
-- correct error messages
-- use of docker
-- documentation: README and inline code comments
+First run instructions from cypress folder.
 
-Results: please share a git repository with us containing your implementation.
+`yarn install`
 
-Level of experience targeted: EXPERT
+`yarn start`
 
-Choose any automation tool. Cypress is a plus.
-Try to progress as far as you can in 2 hours.
-If you have questions please make some assumptions and collect in writing your interpretations.
+App will be available on http://localhost:3000
 
-Good luck.
 
-Time limitations: time is measured from when we send you the assignment to the final commit time onto your repository.
+### Running in docker
+`docker build -t crew-app .`
 
-## Technical test
+`docker run -it --rm -p 5000:5000 --name crew-container crew-app`
 
-Given an application(oos_ca). Run it using the instructions in README.md. Observe the application functionality, assuming that it works correctly.
-Create automation framework that will make sure that behavior stays consistent in future versions.  
-Create documentation on how to work with your test framework.
-Have at least two test suites. 
-
-## Bonus points
-
-- Use Docker for tests
-- Measure performance of different UI operations 
+App will be available on http://localhost:5000
