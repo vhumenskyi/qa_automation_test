@@ -18,3 +18,7 @@ Follow instraction in README.md under "oos-ca" folder to start test application.
 `docker build -t $LOCAL_NAME`
 
 `docker run -it -v $PWD/oos-ca -w /oos-ca $LOCAL_NAME`
+
+### Travis CI integration
+
+https://travis-ci.com/vhumenskyi/qa_automation_test
