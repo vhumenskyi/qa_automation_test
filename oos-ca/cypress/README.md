@@ -14,4 +14,7 @@ Follow instraction in README.md under "oos-ca" folder to start test application.
 `npx cypress open` and click Run All Specs
 
 ### Running in docker
-//TODO
+
+`docker build -t $LOCAL_NAME`
+
+`docker run -it -v $PWD/oos-ca -w /oos-ca $LOCAL_NAME`
