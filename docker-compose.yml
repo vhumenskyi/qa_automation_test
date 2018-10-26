@@ -15,3 +15,5 @@ services:
       dockerfile: Dockerfile-cypress
     depends_on:
       - angular
+    ports:
+      - "5000:5000"
