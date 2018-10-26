@@ -2,18 +2,16 @@ version: "3.6"
 
 services:
 
-  angular:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    ports:
-      - "80:80"
-
   cypress:
     build:
       context: .
       dockerfile: Dockerfile-cypress
     depends_on:
       - angular
+
+  angular:
+    build:
+      context: .
+      dockerfile: Dockerfile
     ports:
       - "5000:5000"
